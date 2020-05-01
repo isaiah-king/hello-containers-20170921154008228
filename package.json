@@ -8,9 +8,15 @@
     "express": "3.4.8",
     "mocha": "*",
     "should": "*",
-    "nconf":  "*",
+    "nconf": "*",
     "validator": "*",
-    "jquery":"*",
-    "request-json":"*"
-  }
+    "jquery": "*",
+    "request-json": "*",
+    "snyk": "^1.316.1"
+  },
+  "scripts": {
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
+  },
+  "snyk": true
 }
